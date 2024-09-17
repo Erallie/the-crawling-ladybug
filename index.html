@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<!-- partial:index.partial.html -->
+<head>
+	<title>The Crawling Ladybug</title>
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="description" content="A ladybug crawls across the screen following your cursor and leaving behind a trail of grass and flowers.">
+	<meta name="author" content="Erika Gozar">
+	<meta name="keywords" content="useless game, useless website, useless websites, useless site, useless sites, the crawling ladybug, crawling ladybug, ladybug, procrastination game, procrastination website, ladybug game, crawling ladybug game, ladybug app, crawling ladybug app, ladybug webapp, crawling ladybug webapp, useless ladybug game, useless crawling ladybug game, useless ladybug app, useless crawling ladybug app, useless ladybug webapp, useless crawling ladybug webapp, ladybug procrastination game, crawling ladybug procrastination game, useless ladybug website, useless crawling ladybug website, ladybug procrastination website, crawling ladybug procrastination website, ladybug procrastination webapp, crawling ladybug procrastination webapp, ladybug procrastination app, crawling ladybug procrastination app, procrastination webapp, procrastination app">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Twinkle+Star&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="setDisplay()">
+
+	<div id="searchExpanded" style="display:none">
+		<form id="searchBar" role="search">
+			<input type="search" id="query" name="q"
+			placeholder="Search the web or type a URL"
+			aria-label="Search the web or type a URL"
+			autocomplete="on">
+			<button id="searchButton">
+				<svg id="searchButtonSVG" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 172 172">
+					<g stroke-width="6" stroke-linejoin="round"><path d="M125.41667,73.45833c0,11.72881 -3.96669,22.53529 -10.56803,31.24919l33.55176,33.55876c1.87223,1.79752 2.62641,4.46675 1.97168,6.97825c-0.65472,2.5115 -2.61605,4.47282 -5.12755,5.12755c-2.5115,0.65472 -5.18073,-0.09946 -6.97825,-1.97168l-33.55876,-33.55176c-8.71389,6.60135 -19.52037,10.56803 -31.24919,10.56803c-28.61092,0 -51.95833,-23.34743 -51.95833,-51.95833c0,-28.6109 23.34741,-51.95833 51.95833,-51.95833c28.61092,0 51.95833,23.34743 51.95833,51.95833zM35.83333,73.45833c0,20.86461 16.76038,37.625 37.625,37.625c10.02513,0 19.07804,-3.89722 25.8042,-10.2321c0.44585,-0.61586 0.98684,-1.15685 1.6027,-1.6027c6.32683,-6.72472 10.2181,-15.77224 10.2181,-25.7902c0,-20.86461 -16.76038,-37.625 -37.625,-37.625c-20.86462,0 -37.625,16.76039 -37.625,37.625z"></path></g></svg>
+			</button>
+		</form>
+		<br>
+		<div id="searchCheckbox">
+		<input type="checkbox" id="searchOnStart" name="searchOnStart" value="search" onchange="setSearchOnStart()">
+		<label for="searchOnStart"> Display search bar when I load the page</label>
+		</div>
+	</div>
+
+	
+
+	<div id="clockExpanded" style="display:none">
+		<p id='day'></p>
+		<p id='time'></p>
+		<p id='date'></p>
+		<div id="clockCheckbox">
+		<input type="checkbox" id="clockOnStart" name="clockOnStart" value="clock" onchange="setClockOnStart()">
+		<label for="clockOnStart"> Display clock when I load the page</label>
+		</div>
+	</div>
+
+
+
+	<div id=aboutExpanded style="display:none">
+		<p id='aboutTitle'>The Crawling Ladybug</p>
+		<p>Made by Erika Gozar</p>
+		<p>A ladybug crawls across the screen following your cursor and leaving behind a trail of grass and flowers.</p>
+		<p>Can be used alongside <a href="https://rocksdanister.github.io/lively/" title="More info on Lively Wallpaper" target="_blank">Lively Wallpaper</a> on Windows 10 or 11 as a live, interactive wallpaper.</p>
+		<p>Can also be used with <a href="https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna" title="View in Chrome Store" target="_blank">New Tab Redirect</a> on a Chrome Browser as a new tab page.</p>
+        <br>
+		<a href="https://www.gozarproductions.com/" title="More info on Gozar Productions" target="_blank">© 2021 Gozar Productions</a>
+	</div>
+
+	
+	<div id=creditExpanded style="display:none">
+		<p id='creditTitle'>Credits</p>
+		<p>Forked from a <a href="https://codepen.io/samme/pen/JBwWLN" title="View samme's demo" target="_blank">simple demo</a> made by samme on <a href="https://codepen.io/" title="Visit codepen.io" target="_blank">codepen.io</a></p>
+		<p>Ladybug image made by <a href="https://www.freepik.com" title="Visit freepik.com" target="_blank">Freepik</a> from <a href="https://www.flaticon.com/" title="Visit flaticon.com" target="_blank">www.flaticon.com</a></p>
+		<p>Search and checkmark icons taken from <a href="https://icons8.com/" title="Visit icons8.com" target="_blank">Icons8.com</a></p>
+		<p>Backgrounds generated from <a href="https://bggenerator.com/" title="Visit bggenerator.com" target="_blank">BgGenerator.com</a></p>
+		<p>Everything else done by Erika Gozar</p>
+		<br>
+		<a href="https://www.gozarproductions.com/" title="More info on Gozar Productions" target="_blank">© 2021 Gozar Productions</a>
+	</div>
+</body>
+	
+<footer>
+	
+	<div id="buttons" class="dropdown">
+		<div class="dropbtn" onClick="showDropdown()">Options</div>
+		<div class="dropdown-content">
+			<a id=aboutLink onClick="toggleAbout()" title="Click to toggle about info">Show Info</a>  
+			<a id=creditLink onClick="toggleCredits()" title="Click to toggle credits">Show Credits</a>
+			<a id=searchLink onClick="toggleSearch()" title="Click to toggle search bar">Show Search Bar</a>
+			<a id=clockLink onClick="toggleClock()" title="Click to toggle clock">Show Clock</a>
+			<a id=fullscreenLink onClick="toggleFullscreen()" title="Click to toggle fullscreen mode">Enter Fullscreen</a>
+			<a id=refreshLink onClick="refresh()" title="Click to refresh page">Refresh Page</a>
+		</div>
+	</div>
+
+</footer>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/phaser@3.52.0/dist/phaser.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/colors/3.0.0/js/colors.js'></script><script src="./script.js"></script>
+
+</html>

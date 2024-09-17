@@ -1,0 +1,339 @@
+html, body {
+  height: 100%;
+	overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #634325;
+  color: #eee;
+  font-family: 'Comfortaa', cursive;
+}
+
+p {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px
+}
+
+a:link {
+  color: #eee;
+	text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+  color: #eee;
+	text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(238, 226, 123);
+	text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: rgb(238, 226, 123);
+	text-decoration: underline;
+}
+
+#searchBar {
+	position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(20, 94, 25, 0.85);
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  padding-left: 4px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#searchExpanded {
+	position: absolute;
+	background-color: rgba(36, 122, 42, 0.85);
+  max-width: 80%;
+	border-radius: 20px 75px 50px;
+  padding-top: 35px;
+  padding-right: 35px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	overflow: auto;
+}
+
+#searchCheckbox {
+  text-align: center;
+	margin-top: 5px;
+}
+
+
+input[type=checkbox] {
+  all: unset;
+  background-color: rgba(20, 94, 25, 0.85);
+  width: 15px;
+  height: 15px;
+  border-radius: 7px;
+  padding: 5px 5px;
+  display: inline-block;
+  align-items: center;
+  vertical-align: bottom;
+}
+
+input[type=checkbox]:checked {
+  all: unset;
+  background-color: rgba(16, 71, 20, 0.85);
+  width: 15px;
+  height: 15px;
+  border-radius: 7px;
+  padding: 5px 5px;
+  display: inline-block;
+  align-items: center;
+  vertical-align: bottom;
+}
+
+input[type=checkbox]:checked:after {
+  all: unset;
+	position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -41%);
+  content: url("assets/checkmark.svg");
+  color: #eee;
+  display: inline-block;
+  align-items: center;
+}
+
+label[for="searchOnStart"], label[for="clockOnStart"] {
+  vertical-align: text-top;
+  font-size: 0.9em;
+	margin-left: 5px;
+}
+
+input[type=search] {
+  all: unset;
+  font: 1em;
+  color: #eee;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+  font-family: 'Comfortaa', cursive;
+}
+
+::placeholder {
+  color: #eee;
+  opacity: 0.7;
+  font-family: 'Comfortaa', cursive;
+}
+
+#searchButton {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+#searchButtonSVG {
+  color: #eee;
+  stroke: #eee;
+  opacity: 0.7;
+  fill: currentColor;
+  width: 26px;
+  height: 26px;
+  padding: 10px;
+}
+
+
+#searchButtonSVG:hover {
+  color: #eee;
+  stroke: #eee;
+  opacity: 1.0;
+  fill: currentColor;
+  width: 26px;
+  height: 26px;
+  padding: 10px;
+}
+
+#aboutExpanded, #creditExpanded {
+	position: absolute;
+	background-color: rgba(36, 122, 42, 0.85);
+	border-radius: 20px 75px 50px;
+	max-height: 75%;
+	width: 615px;
+  max-width: 79%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+	font-size: 1.25em;
+	line-height: 1.2;
+  padding-top: 35px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+	overflow: auto;
+}
+
+#buttons {
+  position: absolute;
+	background-color: rgba(36, 122, 42, 0.85);
+	border-radius: 10px;
+  top: 5px;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding-top: 5px;
+  padding-right: 7px;
+  padding-bottom: 5px;
+  padding-left: 7px;
+}
+
+#buttons:hover, #buttons:focus {
+  position: absolute;
+  background-color: rgba(16, 71, 20, 0.85);
+	border-radius: 10px;
+  top: 5px;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding-top: 5px;
+  padding-right: 7px;
+  padding-bottom: 5px;
+  padding-left: 7px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(36, 122, 42, 0.85);
+  left: 50%;
+  transform: translate(-50%, 5px);
+  min-width: 160px;
+	border-radius: 10px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #eee;
+  padding-top: 5px;
+  padding-right: 7px;
+  padding-bottom: 5px;
+  padding-left: 7px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgba(16, 71, 20, 0.85);
+	border-radius: 10px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display:block;
+}
+
+
+#clockExpanded {
+	position: absolute;
+  height: auto;
+  max-width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  text-align: center;
+}
+
+
+#time {
+	background-color: rgba(36, 122, 42, 0.85);
+	border-radius: 25px 100px 70px;
+  padding-top: 0px;
+  padding-right: 40px;
+  padding-bottom: 0px;
+  padding-left: 40px;
+  font-size: 18vw;
+  font-family: 'Twinkle Star', cursive;
+  line-height: 1.0;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+
+#day {
+	position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+	background-color: rgba(36, 122, 42, 0.85);
+  width: 10.7ex;
+  max-width: 100%;
+	border-radius: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 2em;
+  line-height: 1.0;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+#date {
+	position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+	background-color: rgba(36, 122, 42, 0.85);
+  width: 18.2ex;
+  max-width: 100%;
+	border-radius: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 2em;
+  line-height: 1.0;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+#clockCheckbox {
+	position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+	background-color: rgba(36, 122, 42, 0.85);
+  width: 34ex;
+  max-width: 100%;
+	border-radius: 10px;
+  padding-top: 4px;
+  padding-right: 7px;
+  padding-bottom: 6px;
+  padding-left: 7px;
+}
+
+#creditTitle, #aboutTitle {
+  font-size: 2.5em;
+  font-family: 'Twinkle Star', cursive;
+  line-height: 1.0;
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 23px;
+}
