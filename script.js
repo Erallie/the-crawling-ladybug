@@ -40,16 +40,16 @@ var ladybug;
 function preload() {
 	switch(Math.floor(Math.random() * 4)) {
 		case 0:
-		  var bgLink = 'assets/backgrounds/background1.png';
+		  var bgLink = 'https://ladybug.gozarproductions.com/assets/backgrounds/background1.png';
 		  break;
 		case 1:
-			var bgLink = 'assets/backgrounds/background2.png';
+			var bgLink = 'https://ladybug.gozarproductions.com/assets/backgrounds/background2.png';
 		  break;
 		case 2:
-			var bgLink = 'assets/backgrounds/background3.png';
+			var bgLink = 'https://ladybug.gozarproductions.com/assets/backgrounds/background3.png';
 		  break;
 		case 3:
-			var bgLink = 'assets/backgrounds/background4.png';
+			var bgLink = 'https://ladybug.gozarproductions.com/assets/backgrounds/background4.png';
 		  break;
 		default:
 		  // code block
@@ -57,19 +57,19 @@ function preload() {
 
 	this.load.image('background', bgLink);
 
-	this.load.image('ladybug', 'assets/ladybug.png');
+	this.load.image('ladybug', 'https://ladybug.gozarproductions.com/assets/ladybug.png');
 	
-	this.load.image('grass1', 'assets/grass/Grass1.png');
-	this.load.image('grass2', 'assets/grass/Grass2.png');
-	this.load.image('grass3', 'assets/grass/Grass3.png');
-	this.load.image('grass4', 'assets/grass/Grass4.png');
-	this.load.image('grass5', 'assets/grass/Grass5.png');
-	this.load.image('grass6', 'assets/grass/Grass6.png');
+	this.load.image('grass1', 'https://ladybug.gozarproductions.com/assets/grass/Grass1.png');
+	this.load.image('grass2', 'https://ladybug.gozarproductions.com/assets/grass/Grass2.png');
+	this.load.image('grass3', 'https://ladybug.gozarproductions.com/assets/grass/Grass3.png');
+	this.load.image('grass4', 'https://ladybug.gozarproductions.com/assets/grass/Grass4.png');
+	this.load.image('grass5', 'https://ladybug.gozarproductions.com/assets/grass/Grass5.png');
+	this.load.image('grass6', 'https://ladybug.gozarproductions.com/assets/grass/Grass6.png');
 
-	this.load.image('flowerA', 'assets/flowers/flowerA.png')
-	this.load.image('flowerA_Center', 'assets/flowers/flowerA_Center.png')
-	this.load.image('flowerB', 'assets/flowers/flowerB.png')
-	this.load.image('flowerB_Center', 'assets/flowers/flowerB_Center.png')
+	this.load.image('flowerA', 'https://ladybug.gozarproductions.com/assets/flowers/flowerA.png')
+	this.load.image('flowerA_Center', 'https://ladybug.gozarproductions.com/assets/flowers/flowerA_Center.png')
+	this.load.image('flowerB', 'https://ladybug.gozarproductions.com/assets/flowers/flowerB.png')
+	this.load.image('flowerB_Center', 'https://ladybug.gozarproductions.com/assets/flowers/flowerB_Center.png')
 }
 
 function create() {
