@@ -119,8 +119,8 @@ function spawnGrass() {
   	default:
     	// code block
 	}
-	var grassS = Math.floor(Math.random() * 13) + 48;
-	var grassL = Math.floor(Math.random() * 7) + 28;
+	var grassS = Math.floor(Math.random() * 13) + 29;
+	var grassL = Math.floor(Math.random() * 7) + 57;
 	var grassFinalScale = (Math.random() * 0.75) + 0.25;
 	var newGrass = grass.create(ladybug.x, ladybug.y, grassType).setScale(0.01).setRotation(Math.random() * 2).setTint(HSLToHex(124, grassS, grassL)).setDepth(1);
 	setTimeout(growGrass, 5, newGrass, grassFinalScale);

@@ -6,7 +6,7 @@ html, body {
 body {
   margin: 0;
   padding: 0;
-  background-color: #634325;
+  background-color: #decca6;
   color: #eee;
   font-family: 'Comfortaa', cursive;
 }
@@ -45,7 +45,7 @@ a:active {
 	position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  background-color: rgba(20, 94, 25, 0.85);
+  background-color: hsl(108, 23%, 57%);
   width: 500px;
   max-width: 100%;
   height: auto;
@@ -58,7 +58,7 @@ a:active {
 
 #searchExpanded {
 	position: absolute;
-	background-color: rgba(36, 122, 42, 0.85);
+	background-color: #95bb8b;
   max-width: 80%;
 	border-radius: 20px 75px 50px;
   padding-top: 35px;
@@ -79,7 +79,7 @@ a:active {
 
 input[type=checkbox] {
   all: unset;
-  background-color: rgba(20, 94, 25, 0.85);
+  background-color: hsl(108, 23%, 57%);
   width: 15px;
   height: 15px;
   border-radius: 7px;
@@ -91,7 +91,7 @@ input[type=checkbox] {
 
 input[type=checkbox]:checked {
   all: unset;
-  background-color: rgba(16, 71, 20, 0.85);
+  background-color: #7da674;
   width: 15px;
   height: 15px;
   border-radius: 7px;
@@ -165,7 +165,7 @@ input[type=search] {
 
 #aboutExpanded, #creditExpanded {
 	position: absolute;
-	background-color: rgba(36, 122, 42, 0.85);
+	background-color: #95bb8b;
 	border-radius: 20px 75px 50px;
 	max-height: 75%;
 	width: 615px;
@@ -185,7 +185,7 @@ input[type=search] {
 
 #buttons {
   position: absolute;
-	background-color: rgba(36, 122, 42, 0.85);
+	background-color: #95bb8b;
 	border-radius: 10px;
   top: 5px;
   text-align: center;
@@ -199,7 +199,7 @@ input[type=search] {
 
 #buttons:hover, #buttons:focus {
   position: absolute;
-  background-color: rgba(16, 71, 20, 0.85);
+  background-color: #7da674;
 	border-radius: 10px;
   top: 5px;
   text-align: center;
@@ -221,7 +221,7 @@ input[type=search] {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(36, 122, 42, 0.85);
+  background-color: #95bb8b;
   left: 50%;
   transform: translate(-50%, 5px);
   min-width: 160px;
@@ -242,7 +242,7 @@ input[type=search] {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: rgba(16, 71, 20, 0.85);
+  background-color: #7da674;
 	border-radius: 10px;
 }
 
@@ -265,7 +265,7 @@ input[type=search] {
 
 
 #time {
-	background-color: rgba(36, 122, 42, 0.85);
+	background-color: #95bb8b;
 	border-radius: 25px 100px 70px;
   padding-top: 0px;
   padding-right: 40px;
@@ -283,7 +283,7 @@ input[type=search] {
 	position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-	background-color: rgba(36, 122, 42, 0.85);
+	background-color: #95bb8b;
   width: 10.7ex;
   max-width: 100%;
 	border-radius: 10px;
@@ -301,7 +301,7 @@ input[type=search] {
 	position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-	background-color: rgba(36, 122, 42, 0.85);
+	background-color: #95bb8b;
   width: 18.2ex;
   max-width: 100%;
 	border-radius: 10px;
@@ -319,7 +319,7 @@ input[type=search] {
 	position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-	background-color: rgba(36, 122, 42, 0.85);
+	background-color: #95bb8b;
   width: 34ex;
   max-width: 100%;
 	border-radius: 10px;
